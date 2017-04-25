@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:background="#a000"
+        android:padding="0.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_demo" />
+
+    <TextView
+        android:id="@+id/tv_title"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:maxLines="2"
+        android:text="标题"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_icon"
+        android:layout_alignLeft="@+id/tv_title"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:maxLines="2"
+        android:text="时间"
+        android:textColor="#a000"
+        android:textSize="16dp" />
+</RelativeLayout>
